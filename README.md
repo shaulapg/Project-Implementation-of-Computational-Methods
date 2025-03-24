@@ -13,7 +13,7 @@ As it has only three letters, the best aproach is to use a Non-Deterministic Fin
 The language can onlly accept combinations of three letters, so it can be defined as **Σ = 1,a,b**. Adding the expression of the previously stated rules, the Regular Language can be expressed as **`^(?!.*aaaaa)(?!.*b1b1b1b1b1).*b1$`**
 
 Now that the rules are stablished, the next step is to implement the automaton using Q states. Merriam-Webster Dictionary defines an automaton as a "machine or control mechanism designed to follow automatically a predetermined sequence of operations or respond to encoded instructions" (Merriam-Webster, n.d.). The following image describes the automaton in a more visual way:
-![alt text](image.png)
+![alt text](Automata.png)
 
 Added to the visul representation, the automaton can also be expressed with a table which may help to follow the right:
 Initial State | Input | Final State
@@ -81,7 +81,7 @@ To implement the automaton to a prolog file, it is important to translate our pr
 `automaton(Word):- check(Word, q0).`: This is the way we'll start the validation. It starts by sending the list to check with the initial state of Q0.
 
 ## Tests
-![alt text](image-1.png)
+![alt text](test_image.png)
 
 ## Complexity
 The time complexity is *O(n)*, as there are *n* number of letters to check, which is the number of times the loop will be checked.
