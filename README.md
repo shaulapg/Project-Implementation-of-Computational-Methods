@@ -84,7 +84,7 @@ To implement the automaton to a prolog file, it is important to translate our pr
 ![alt text](image-1.png)
 
 ## Complexity
-The time complexity is O(n), as there are *n* number iof letters to check, which is the number of times the loop will be checked.
+The time complexity is *O(n)*, as there are *n* number of letters to check, which is the number of times the loop will be checked.
 
 ## References
 Merriam-Webster. (n.d.). Automaton. In Merriam-Webster.com dictionary. Retrieved March 24, 2025, from https://www.merriam-webster.com/dictionary/automaton
